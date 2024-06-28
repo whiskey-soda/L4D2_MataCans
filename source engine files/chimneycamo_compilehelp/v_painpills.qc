@@ -16,7 +16,7 @@ $IllumPosition -2.128 -17.406 -30.662
 
 $Opaque
 
-$CDMaterials "models\v_models\Weapons\eq_painpills\"
+$CDMaterials "matacan\"
 
 $CBox 0 0 0 0 0 0
 
