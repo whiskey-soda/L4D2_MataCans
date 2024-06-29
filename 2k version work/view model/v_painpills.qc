@@ -234,6 +234,11 @@ $Animation "a_painpills_arms_trans_corrective_animation" "v_painpills_anims\a_pa
 $Animation "a_painpills_arms_trans_up_corrective_animation" "v_painpills_anims\a_painpills_arms_trans_up_corrective_animation.smd" {
 }
 
+$Animation "a_painpills_arms_vaims_corrective_animation" "v_painpills_anims\a_painpills_arms_vaims_corrective_animation.smd" {
+	fps 30
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 0
+}
+
 $Animation "a_painpills_pose_neutral" "v_painpills_anims\a_painpills_pose_neutral.smd" {
 	fps 30
 	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 0 0 target 0
@@ -311,6 +316,7 @@ $Sequence "painpills_draw_layer" {
 	fadein 0
 	fadeout 0.2
 	fps 50
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 40 40 target 0
 	weightlist "weights_a_painpills_arms_vaims"
 }
 
@@ -330,6 +336,7 @@ $Sequence "painpills_melee_layer" {
 	fadein 0.1
 	fadeout 0.4
 	fps 40
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 40 40 target 0
 	weightlist "weights_a_painpills_arms_vaims"
 }
 
@@ -352,6 +359,7 @@ $Sequence "eq_painpills_ItemPickup_idle_layer" {
 	snap
 	fps 30
 	loop
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 60 60 target 0
 	weightlist "weights_a_painpills_arms_vaims"
 }
 
@@ -373,6 +381,7 @@ $Sequence "eq_painpills_ItemPickup_extend_layer" {
 	fadeout 0.2
 	snap
 	fps 80
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 50 50 target 0
 	weightlist "weights_a_painpills_arms_vaims"
 }
 
@@ -393,6 +402,7 @@ $Sequence "eq_painpills_ItemPickup_retract_layer" {
 	fadein 0
 	fadeout 0.3
 	fps 80
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 50 50 target 0
 	weightlist "weights_a_painpills_arms_vaims"
 }
 
@@ -415,6 +425,7 @@ $Sequence "eq_painpills_HelpingHand_idle_layer" {
 	snap
 	fps 30
 	loop
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 60 60 target 0
 	weightlist "weights_a_painpills_arms_vaims"
 }
 
@@ -436,6 +447,7 @@ $Sequence "eq_painpills_HelpingHand_extend_layer" {
 	fadeout 0.2
 	snap
 	fps 80
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 50 50 target 0
 	weightlist "weights_a_painpills_arms_vaims"
 }
 
@@ -456,6 +468,7 @@ $Sequence "eq_painpills_HelpingHand_retract_layer" {
 	fadein 0
 	fadeout 0.3
 	fps 80
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 50 50 target 0
 	weightlist "weights_a_painpills_arms_vaims"
 }
 
@@ -476,4 +489,5 @@ $Sequence "eq_painpills_use_layer" {
 	fadeout 0.2
 	snap
 	fps 40
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 30 30 target 0
 }

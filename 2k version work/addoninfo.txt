@@ -1,0 +1,20 @@
+"AddonInfo"
+{
+	addonversion		"1"			//Max 31 chars. Allows decimals
+	addontitle		"Toa Mata Canister Pills (RNG)"	//Max 127 chars.
+	addonauthor		"X-CL/BR"	//Max 119 chars.
+	addonDescription	"description goes here"	//Max 1023 chars.
+
+//	These are the tags shown in the game's addon menu, by which you can filter by.
+	addonContent_Campaign		0			
+	addonContent_Map		0
+	addonContent_Skin		0
+	addonContent_weapon		0
+	addonContent_BossInfected	0
+	addonContent_CommonInfected	0
+	addonContent_Survivor		0
+	addonContent_Sound		0
+	addonContent_Music		0
+	addonContent_Script		0
+	addonContent_prop           	0
+}
